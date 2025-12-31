@@ -148,26 +148,33 @@ export function Dashboard({ user }: { user: any }) {
     if (data) setMessages(data as Message[])
   }
 
-  const createProject = async () => {
-    if (!projectName) return
-    const { data, error } = await supabase.from("projects").insert({ 
-      name: projectName, 
-      description: projectDescription,
-      owner_id: user.id 
-    }).select().single()
-    
-    if (error) {
-      console.error("Error creating project:", error)
-      return
+    const createProject = async () => {
+      if (!projectName) return
+      const { data, error } = await supabase.from("projects").insert({ 
+        name: projectName, 
+        description: projectDescription,
+        owner_id: user.id 
+      }).select().single()
+      
+      if (error) {
+        console.error("Error creating project:", error)
+        return
+      }
+      if (data) {
+        // Automatically add owner to project_members
+        await supabase.from("project_members").insert({
+          project_id: data.id,
+          user_id: user.id,
+          role: "owner"
+        })
+        
+        setProjects([data, ...projects])
+        setProjectName("")
+        setProjectDescription("")
+        setShowNewProject(false)
+        setActiveProject(data)
+      }
     }
-    if (data) {
-      setProjects([data, ...projects])
-      setProjectName("")
-      setProjectDescription("")
-      setShowNewProject(false)
-      setActiveProject(data)
-    }
-  }
 
   const updateProject = async () => {
     if (!activeProject || !projectName) return
