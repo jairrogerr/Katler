@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Katler
 
-## Getting Started
+Katler é uma plataforma open source de apoio à organização, registro e estruturação de ideias, projetos e decisões — criada para desenvolvedores, criadores e fundadores que pensam demais, planejam demais e precisam de um lugar claro para transformar pensamento em ação.
 
-First, run the development server:
+Este projeto não nasce com fins comerciais. Ele existe para:
+- Concretizar um sonho pessoal
+- Ajudar outros desenvolvedores
+- Servir como referência técnica e conceitual
+- Compor portfólio de forma honesta e útil
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Visão do Projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A maioria das ferramentas de produtividade é genérica demais ou complexa demais.  
+O Katler nasce com uma proposta simples:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> **Centralizar projetos e registrar decisões, ideias e mensagens de forma estruturada, clara e rastreável.**
 
-## Learn More
+Nada de “tudo em um bloco bagunçado”.
+Nada de excesso de funcionalidades no MVP.
+Nada de promessas milagrosas.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧠 Conceito
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+No Katler, tudo gira em torno de **Projetos**.
 
-## Deploy on Vercel
+Cada projeto pode conter:
+- 📌 **Decisões** — registros claros do que foi decidido e por quê  
+- 💡 **Ideias** — pensamentos soltos, sugestões, possibilidades futuras  
+- 💬 **Mensagens** — discussões, observações e registros informais  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O foco é **organização mental e clareza**, não gerenciamento corporativo pesado.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🧩 Funcionalidades (MVP)
+
+- Autenticação simples (login e registro)
+- Criação e acesso a projetos
+- Área de mensagens com filtros por tipo (decisão, ideia, etc.)
+- Interface limpa, direta e sem distrações
+- Estrutura pensada para evoluir de forma modular
+
+> O Katler ainda está em desenvolvimento ativo. Funcionalidades serão adicionadas com critério, não por impulso.
+
+---
+
+## 🛠️ Stack (resumo)
+
+> A stack completa e detalhada pode ser encontrada na documentação técnica do projeto.
+
+- Frontend moderno e responsivo
+- Backend estruturado em camadas
+- Banco de dados relacional
+- Arquitetura pensada para crescimento sustentável
+
+---
+
+## 📂 Estrutura do Repositório
+
+```text
+katler/
+├── frontend/
+├── backend/
+├── docs/
+├── .github/
+├── README.md
+└── LICENSE
+````
+
+---
+
+## 🤝 Contribuição
+
+O Katler é **open source** e contribuições são bem-vindas.
+
+Se você deseja contribuir:
+
+1. Faça um fork do repositório
+2. Crie uma branch clara e objetiva
+3. Mantenha o código simples e bem documentado
+4. Abra um Pull Request explicando o que foi feito e por quê
+
+Leia o arquivo [CONTRIBUTING.md](./CONTRIBUTING.md) antes de enviar alterações.
+
+---
+
+## 📜 Licença
+
+Este projeto é distribuído sob uma licença customizada que permite:
+
+* Uso
+* Estudo
+* Modificação
+* Inspiração
+
+❌ Não é permitido o uso comercial direto sem autorização.
+
+Detalhes completos em [LICENSE](./LICENSE).
+
+---
+
+## 🎯 Status do Projeto
+
+* 🚧 Em desenvolvimento
+* 🧪 MVP em evolução
+* 📈 Planejado para crescimento gradual e consciente
+
+---
+
+## 🧠 Nota Final
+
+Katler não é uma startup.
+Não é um produto para investidores.
+Não é uma promessa de hype.
+
+É um projeto construído com intenção, aprendizado e propósito.
+
+Se ele te ajudar de alguma forma — já cumpriu seu papel.
